@@ -1,10 +1,9 @@
-import React from 'react';
-
+import React from "react";
 
 
 function App() {
   return <div>
-    <h1>WebX Forms</h1>
+    <h1><span>WebX</span> Forms</h1>
   </div>;
 }
 
