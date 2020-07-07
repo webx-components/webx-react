@@ -1,0 +1,66 @@
+.NumberField * {
+    box-sizing: border-box;
+}
+
+.NumberField {
+    position: relative;
+    display: grid;
+    grid-template-columns: 42px auto 42px;
+
+    width: 160px;
+}
+
+.NumberFieldInput {
+    padding: 0 8px;
+    border: none;
+    border-right: 2px solid #e2e2e2;
+    border-left: 2px solid #e2e2e2;
+
+    background-color: #f3f3f3;
+    color: #111111;
+
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    text-align: center;
+    min-width: 62px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input.NumberFieldInput::-webkit-outer-spin-button,
+input.NumberFieldInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input.NumberFieldInput[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.LeftButton {
+    border-radius: 10px 0 0 10px;
+}
+
+.RightButton {
+    border-radius: 0 10px 10px 0;
+}
+
+.Button {
+    padding: 12px 0;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    border: none;
+    background-color: #f3f3f3;
+    color: #111111;
+    outline: none;
+
+    text-align: center;
+    cursor: pointer;
+}

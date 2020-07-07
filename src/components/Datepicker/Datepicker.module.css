@@ -1,0 +1,136 @@
+.Datepicker {
+    position: relative;
+}
+
+
+
+.DatepickerInput {
+    display: inline-block;
+    padding: 12px 24px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    border-radius: 10px;
+    border: 2px solid #dfdfe7;
+    outline: none;
+
+    background-color: #ffffff;
+
+    user-select: none;
+    cursor: pointer;
+}
+.DatepickerInput::placeholder {
+    color: #aaaaaa;
+}
+
+
+
+.DatepickerDropdown {
+    z-index: 9999;
+
+    display: none;
+    position: absolute;
+
+    transform: translateY(4px);
+
+    border-radius: 10px;
+    border: 2px solid #dfdfe7;
+    background-color: #ffffff;
+    color: #111111;
+}
+.Datepicker.Active .DatepickerDropdown {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    animation: fadeInFromNone 0.2s ease-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: grid;
+        opacity: 0;
+    }
+
+    100% {
+        display: grid;
+        opacity: 1;
+    }
+}
+
+
+
+
+.Line {
+    margin: 0 20px;
+    border-top: 2px solid #dfdfe7;
+}
+
+
+
+.DatepickerMonths {
+    padding: 12px 0;
+    border-right: 2px solid #dfdfe7;
+
+    font-weight: 400;
+}
+.DatepickerMonth {
+    padding: 8px 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.Selected.DatepickerMonth {
+    font-weight: 600;
+    color: dodgerblue;
+}
+:not(.Selected).DatepickerMonth:hover {
+    color: dodgerblue;
+    opacity: .8;
+}
+
+
+
+.DatepickerWeeks {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+
+    padding: 0 16px;
+}
+.DatepickerWeekday {
+    text-transform: capitalize;
+    padding: 20px 10px;
+}
+
+
+
+.DatepickerDays {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+
+    padding: 8px 16px;
+}
+.DatepickerDay {
+    padding: 11px 10px;
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.Selected.DatepickerDay {
+    background-color: dodgerblue;
+    border-radius: 100px;
+    color: #ffffff;
+}
+:not(.Selected).DatepickerDay:hover {
+    background-color: rgba(30, 144, 255, 0.5);
+    border-radius: 100px;
+    color: #ffffff;
+}

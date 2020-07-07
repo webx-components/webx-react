@@ -1,0 +1,17 @@
+.Field {
+    padding: 12px 24px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #111111;
+    background-color: #f3f3f3;
+}
+
+.Field::placeholder {
+    color: #bcbcbc;
+}
