@@ -10,10 +10,10 @@ import NumberField2 from "../components/NumberField/NumberField2.component";
 import PasswordField from "../components/PasswordField/PasswordField.component";
 
 /**
- * class FramerTheme
+ * class BubbleTheme
  * @author Ingo Andelhofs
  */
-export default class FramerTheme extends Component {
+export default class BubbleTheme extends Component {
   public render(): ReactNode {
     return <section>
       <h1><span>Webx React Forms</span> Bubble Theme</h1>
@@ -61,7 +61,7 @@ export default class FramerTheme extends Component {
 
 
 
-      <div style={{height: "100vh"}}/>
+      <div style={{height: "20vh"}}/>
     </section>;
   }
 }

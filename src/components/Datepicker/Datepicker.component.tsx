@@ -159,6 +159,7 @@ export default class Datepicker extends Component {
             const selected = month.short === this.state.date.month ? theme.Selected : "";
 
             return <div
+              key={month.short}
               onClick={() => this.onMonthChange(month.short)}
               className={theme.DatepickerMonth + " " + selected}>{month.full}</div>;
           })}
@@ -167,7 +168,7 @@ export default class Datepicker extends Component {
         <div>
           <div className={theme.DatepickerWeeks}>
             {weekdays.map(weekday => {
-              return <div className={theme.DatepickerWeekday}>{weekday.short}</div>;
+              return <div key={weekday.short} className={theme.DatepickerWeekday}>{weekday.short}</div>;
             })}
           </div>
 
@@ -178,6 +179,7 @@ export default class Datepicker extends Component {
               const selected = day === this.state.date.day ? theme.Selected : "";
 
               return <div
+                key={day}
                 onClick={() => this.onDayChange(day)}
                 className={theme.DatepickerDay + " " + selected}>{day}</div>;
             })}

@@ -137,9 +137,8 @@ export default class DefaultTheme extends Component {
       <h2>Textarea</h2>
       <textarea cols={30} rows={10} />
 
-      <br/>
-      <br/>
-      <br/>
+
+      <div style={{height: "20vh"}}/>
     </section>;
   }
 }

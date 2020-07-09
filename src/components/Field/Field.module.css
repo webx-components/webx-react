@@ -1,4 +1,13 @@
 .Field {
+    position: relative;
+    display: inline-block;
+}
+
+.Field * {
+    box-sizing: border-box;
+}
+
+.FieldInput {
     padding: 12px 24px;
 
     border-radius: 10px;
@@ -12,6 +21,46 @@
     background-color: #f3f3f3;
 }
 
-.Field::placeholder {
+.FieldInput::placeholder {
     color: #bcbcbc;
+}
+
+
+.Field .Icon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+
+    filter: invert(0.6);
+    cursor: pointer;
+}
+
+.Field .Icon:hover {
+    filter: invert(0.4);
+}
+
+.Field .LeftIcon {
+    left: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.LeftIcon + .FieldInput {
+    padding-left: 38px;
+}
+
+.Field .RightIcon {
+    right: 20px;
+    transform: translate(50%, -50%);
+}
+
+.RightIcon + .FieldInput {
+    padding-right: 38px;
+}
+
+.Field .RightIcon.LastPass {
+    right: 38px;
+}
+.RightIcon.LassPass + .FieldInput {
+    padding-right: 56px;
 }
