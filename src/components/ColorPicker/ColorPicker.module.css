@@ -1,0 +1,37 @@
+.ColorPicker {
+    position: relative;
+
+    display: inline-block;
+    padding: 10px 16px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #111111;
+    background-color: #f3f3f3;
+}
+
+
+.ColorPicker .ColorBox {
+    /*position: relative;*/
+    height: 28px;
+    width: 48px;
+
+    border-radius: 6px;
+
+    background-color: dodgerblue;
+}
+
+.Hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}

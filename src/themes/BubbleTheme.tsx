@@ -8,6 +8,11 @@ import FileUpload from "../components/FileUpload/FileUpload.component";
 import NumberField from "../components/NumberField/NumberField.component";
 import NumberField2 from "../components/NumberField/NumberField2.component";
 import PasswordField from "../components/PasswordField/PasswordField.component";
+import ColorPicker from "../components/ColorPicker/ColorPicker.component";
+import Radio from "../components/Radio/Radio.component";
+import {Input} from "../components/input/input.component";
+
+
 
 /**
  * class BubbleTheme
@@ -21,9 +26,17 @@ export default class BubbleTheme extends Component {
       {/* TODO: */}
       {/* Color Picker */}
       {/* Date + Time Picker */}
-      {/* Image Button */}
+      {/* Image Button ??? */}
       {/* Month Picker */}
-      {/* Month Picker */}
+      {/* Reset Button ??? */}
+      {/* Search ??? */}
+      {/* Submit button !!! */}
+      {/* Phone number */}
+      {/* Time */}
+      {/* Url */}
+      {/* Week */}
+      {/* Select */}
+      {/* Area */}
 
       <h2>Button</h2>
       <Button>Click me</Button>
@@ -35,6 +48,14 @@ export default class BubbleTheme extends Component {
 
       <h2><span>React</span> Checkbox</h2>
       <Checkbox />
+
+      <div style={{display: "none"}}>
+        <h2>Color Picker</h2>
+        <Field type="color" />
+      </div>
+
+      <h2><span>React</span> Color Picker</h2>
+      <ColorPicker />
 
       <h2><span>React</span> Datepicker</h2>
       <Datepicker />
@@ -59,9 +80,15 @@ export default class BubbleTheme extends Component {
       <h2>Password Field</h2>
       <PasswordField />
 
+      <h2><span>React</span> Radio button</h2>
+      <Radio/>
+
+      <h2><span>React</span> Range slider</h2>
+      ...
 
 
-      <div style={{height: "20vh"}}/>
+
+      <div style={{height: "40vh"}}/>
     </section>;
   }
 }

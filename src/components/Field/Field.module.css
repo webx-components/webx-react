@@ -3,11 +3,12 @@
     display: inline-block;
 }
 
-.Field * {
-    box-sizing: border-box;
-}
+/*.Field * {*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 .FieldInput {
+    display: block;
     padding: 12px 24px;
 
     border-radius: 10px;
