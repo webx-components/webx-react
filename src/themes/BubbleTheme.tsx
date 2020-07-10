@@ -12,6 +12,9 @@ import ColorPicker from "../components/ColorPicker/ColorPicker.component";
 import Radio from "../components/Radio/Radio.component";
 import Slider from "../components/Slider/Slider.component";
 import PureSlider from "../components/Slider/PureSlider.component";
+import SelectField from "../components/SelectField/SelectField.component";
+import Textarea from "../components/Textarea/Textarea.component";
+import {Input} from "../components/input/input.component";
 
 
 
@@ -61,11 +64,7 @@ export default class BubbleTheme extends Component {
       <h2><span>React</span> Datepicker</h2>
       <Datepicker />
 
-      <h2>Email Field</h2>
-      <Field
-        type="email"
-        placeholder="jhon.doe@example.com"
-      />
+
 
       <h2><span>React</span> File upload</h2>
       <FileUpload />
@@ -87,17 +86,64 @@ export default class BubbleTheme extends Component {
       <h2><span>React</span> Range slider</h2>
       <Slider />
 
-      <h2><span>Pure</span> Range slider</h2>
-      <PureSlider/>
+      <div style={{display: "none"}}>
+        <h2><span>Pure</span> Range slider</h2>
+        <PureSlider/>
+      </div>
 
       <h2><span>React</span> Selection Field</h2>
-      <Field />
+      <SelectField />
 
       <h2><span>React</span> Text Area</h2>
-      <Field />
+      <Textarea placeholder="Type here ..." />
 
 
+      <div style={{height: "20vh"}}/>
+      <h1><span>Extra field types</span> Bubble Theme</h1>
+      <h2>Time picker</h2>
+      <Field type={"time"} placeholder={"Enter a time"} />
 
+      <h2>Week</h2>
+      <Field type={"week"} placeholder={"Enter a weekday"} />
+
+      <h2>Month Field</h2>
+      <Field type={"month"} placeholder={"Enter a month"} />
+
+      <h2>Date picker</h2>
+      <Field type={"date"} placeholder={"Enter a date"} />
+
+      <h2>Date + Time picker</h2>
+      <Field type={"datetime-local"} placeholder={"Enter a local date"} />
+
+      <h2>Email Field</h2>
+      <Field type={"email"} placeholder={"Enter an email"} />
+
+      <h2>Number Field</h2>
+      <Field type={"number"} placeholder={"Enter a number"} />
+
+      <h2>Password Field</h2>
+      <Field type={"password"} placeholder={"Enter password"} />
+
+      <h2>Search Field</h2>
+      <Field type={"search"} placeholder={"Enter a search term"} />
+
+      <h2>Telephone Field</h2>
+      <Field type={"tel"} placeholder={"Enter a phone-number"} />
+
+      <h2>Text Field</h2>
+      <Field type={"text"} placeholder={"Enter some text"} />
+
+      <h2>Url Field</h2>
+      <Field type={"url"} placeholder={"Enter a url"} />
+
+      <h2>Image Button</h2>
+      <Field type={"image"} src={"https://via.placeholder.com/60x40"}  />
+
+      <h2>Reset Button</h2>
+      <Field type={"reset"} />
+
+      <h2>Submit Button</h2>
+      <Field type={"submit"} />
 
       <div style={{height: "40vh"}}/>
     </section>;

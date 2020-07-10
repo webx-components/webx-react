@@ -1,5 +1,7 @@
 import React, {Component, ReactNode} from 'react';
 import theme from "./Datepicker.module.css";
+import Field from "../Field/Field.component";
+import calSvg from "./svg/cal.svg";
 
 
 const weekdays = [
@@ -146,11 +148,13 @@ export default class Datepicker extends Component {
 
 
     return <div className={`${theme.Datepicker} ${active}`}>
-      <input
+      <Field
         readOnly
         type="text"
+        rightIconSrc={calSvg}
+        onRightIconClick={this.onToggle}
         onClick={this.onToggle}
-        className={theme.DatepickerInput}
+        className={theme.DatepickerField}
         placeholder={`${this.state.date.day} ${this.state.date.month} ${this.state.date.year}`} />
 
       <div className={theme.DatepickerDropdown}>

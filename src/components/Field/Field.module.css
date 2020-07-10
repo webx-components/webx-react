@@ -8,6 +8,9 @@
 /*}*/
 
 .FieldInput {
+    -webkit-appearance: none;
+    appearance: none;
+
     display: block;
     padding: 12px 24px;
 
@@ -24,6 +27,23 @@
 
 .FieldInput::placeholder {
     color: #bcbcbc;
+}
+
+input[type="submit"].FieldInput, input[type="reset"].FieldInput, input[type="image"].FieldInput {
+    padding: 12px 24px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #f1f1f1;
+    background-color: dodgerblue;
+
+    user-select: none;
+    cursor: pointer;
 }
 
 

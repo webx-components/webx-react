@@ -1,5 +1,7 @@
 import React, {Component, ReactNode} from 'react';
 import theme from "./Field.module.css"
+import c from "classnames";
+
 
 /**
  * class Field
@@ -29,7 +31,7 @@ export default class Field extends Component<any, any> {
    * Render the field component
    */
   public render(): ReactNode {
-    const { leftIconSrc, rightIconSrc, onLeftIconClick, onRightIconClick, ...props } = this.props;
+    const { className, leftIconSrc, rightIconSrc, onLeftIconClick, onRightIconClick, ...props } = this.props;
 
     return <div className={theme.Field}>
       {leftIconSrc ? <img
@@ -46,7 +48,7 @@ export default class Field extends Component<any, any> {
 
       <input
         ref={this.inputRef}
-        className={theme.FieldInput}
+        className={c(theme.FieldInput, className)}
         {...props} />
     </div>;
   }
