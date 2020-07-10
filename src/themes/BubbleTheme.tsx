@@ -10,7 +10,8 @@ import NumberField2 from "../components/NumberField/NumberField2.component";
 import PasswordField from "../components/PasswordField/PasswordField.component";
 import ColorPicker from "../components/ColorPicker/ColorPicker.component";
 import Radio from "../components/Radio/Radio.component";
-import {Input} from "../components/input/input.component";
+import Slider from "../components/Slider/Slider.component";
+import PureSlider from "../components/Slider/PureSlider.component";
 
 
 
@@ -81,10 +82,20 @@ export default class BubbleTheme extends Component {
       <PasswordField />
 
       <h2><span>React</span> Radio button</h2>
-      <Radio/>
+      <Radio />
 
       <h2><span>React</span> Range slider</h2>
-      ...
+      <Slider />
+
+      <h2><span>Pure</span> Range slider</h2>
+      <PureSlider/>
+
+      <h2><span>React</span> Selection Field</h2>
+      <Field />
+
+      <h2><span>React</span> Text Area</h2>
+      <Field />
+
 
 
 

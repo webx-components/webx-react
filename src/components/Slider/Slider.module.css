@@ -1,0 +1,45 @@
+@value slider-thumb-size: 20px;
+@value slider-height: 12px;
+
+@value slider-track-bg-color: #f1f1f1;
+@value slider-thumb-bg-color: dodgerblue;
+
+
+.Slider {
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+
+
+.Slider .Track {
+    width: 100%;
+
+    height: slider-height;
+    border-radius: slider-height;
+
+    background-color: slider-track-bg-color;
+}
+
+
+.Slider .Track .Fill {
+    background-color: slider-thumb-bg-color;
+}
+
+
+.Slider .Track .Thumb {
+    display: inline-block;
+
+    position: relative;
+    left: calc(250px - slider-thumb-size);
+    top: calc((slider-height - slider-thumb-size) / 2);
+
+    width: slider-thumb-size;
+    height: slider-thumb-size;
+
+    border-radius: slider-thumb-size;
+
+    background-color: slider-thumb-bg-color;
+
+    cursor: e-resize !important;
+}
