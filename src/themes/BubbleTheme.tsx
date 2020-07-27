@@ -14,7 +14,6 @@ import Slider from "../components/Slider/Slider.component";
 import PureSlider from "../components/Slider/PureSlider.component";
 import SelectField from "../components/SelectField/SelectField.component";
 import Textarea from "../components/Textarea/Textarea.component";
-import {Input} from "../components/input/input.component";
 
 
 
@@ -83,7 +82,7 @@ export default class BubbleTheme extends Component {
       <h2><span>React</span> Radio button</h2>
       <Radio />
 
-      <h2><span>React</span> Range slider</h2>
+      <h2><span>React</span> Range slider (Unstable)</h2>
       <Slider />
 
       <div style={{display: "none"}}>
@@ -91,7 +90,7 @@ export default class BubbleTheme extends Component {
         <PureSlider/>
       </div>
 
-      <h2><span>React</span> Selection Field</h2>
+      <h2><span>React</span> Selection Field (Unstable)</h2>
       <SelectField />
 
       <h2><span>React</span> Text Area</h2>
