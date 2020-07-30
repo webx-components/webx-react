@@ -1,6 +1,6 @@
 import React, {Component, ReactNode} from 'react';
 import theme from "./Field.module.css"
-import c from "classnames";
+import c from "clsx";
 
 
 /**

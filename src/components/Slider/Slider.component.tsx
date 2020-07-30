@@ -1,5 +1,5 @@
 import React, {Component, ReactNode} from 'react';
-import c from "classnames";
+import c from "clsx";
 import theme from "./Slider.module.css";
 
 

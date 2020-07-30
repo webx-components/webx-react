@@ -1,13 +1,9 @@
 {
-  "name": "webx-react-forms",
-  "version": "0.1.0",
+  "name": "webx-react",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^5.1.5",
-    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,8 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +32,10 @@
     ]
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.10"
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5"
   },
   "bit": {
     "env": {
@@ -45,5 +43,6 @@
     },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm"
-  }
+  },
+  "license": "MIT"
 }
