@@ -1,0 +1,19 @@
+@mixin input-spacing {
+  padding: 12px 24px;
+}
+
+@mixin input-border {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+@mixin input-font {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin clickable {
+  user-select: none;
+  cursor: pointer;
+}

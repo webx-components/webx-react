@@ -1,0 +1,21 @@
+@import 'form-mixins';
+
+// Button
+.button {
+  @include input-spacing;
+  @include input-border;
+  @include input-font;
+  @include clickable;
+
+  // Colors
+  color: #f1f1f1;
+  background-color: #1e90ff;
+
+  // Transition
+  transition: .2s ease;
+
+
+  &:hover {
+    background-color: #0f69c4;
+  }
+}

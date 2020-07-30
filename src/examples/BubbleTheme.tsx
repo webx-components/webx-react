@@ -1,5 +1,5 @@
 import React, {Component, ReactNode} from 'react';
-import Button from "../components/Button/Button.component";
+import Button from "../components/Button/Button";
 import PureCheckbox from "../components/Checkbox/PureCheckbox.component";
 import Checkbox from "../components/Checkbox/Checkbox.component";
 import Datepicker from "../components/Datepicker/Datepicker.component";

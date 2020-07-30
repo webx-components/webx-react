@@ -4,9 +4,9 @@
     "bubble-ui.react-forms/button@0.0.0": {
         "files": [
             {
-                "relativePath": "src/components/Button/Button.component.tsx",
+                "relativePath": "src/components/Button/Button.tsx",
                 "test": false,
-                "name": "Button.component.tsx"
+                "name": "Button.tsx"
             },
             {
                 "relativePath": "src/components/Button/Button.module.css",
@@ -14,7 +14,7 @@
                 "name": "Button.module.css"
             }
         ],
-        "mainFile": "src/components/Button/Button.component.tsx",
+        "mainFile": "src/components/Button/Button.tsx",
         "trackDir": "src/components/Button",
         "origin": "AUTHORED",
         "exported": true

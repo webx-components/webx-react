@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 // Example code imports
 import "./examples/css/global.scss";
-import "./css/bubble/forms.scss";
+import "./css/main.scss";
 import BubbleTheme from "./examples/BubbleTheme";
 import DefaultTheme from "./examples/DefaultTheme";
 

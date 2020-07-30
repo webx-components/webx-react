@@ -14,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "build:css": "sass --no-source-map --style compressed ./src/css/main.scss ./css/main.min.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,7 +36,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^5.1.5"
+    "@types/react-router-dom": "^5.1.5",
+    "sass": "^1.26.10"
   },
   "bit": {
     "env": {
