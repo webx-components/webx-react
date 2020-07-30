@@ -30,7 +30,7 @@ export default class BubbleTheme extends Component {
     return <section>
       <DefaultStyle/>
 
-      <h1><span>Webx React Forms</span> Bubble Theme</h1>
+      <h1><span>Webx React</span> Bubble Theme</h1>
 
       {/* TODO: */}
       {/* Color Picker */}

@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 
 /**
- * component Props
+ * ButtonUi Props
  * @author Ingo Andelhofs
  */
 export interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
