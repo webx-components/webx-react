@@ -1,21 +1,44 @@
 @import 'form-mixins';
 
-// Button
+
 .button {
   @include input-spacing;
   @include input-border;
   @include input-font;
   @include clickable;
 
-  // Colors
-  color: #f1f1f1;
+  appearance: none;
   background-color: #1e90ff;
 
-  // Transition
-  transition: .2s ease;
+  position: relative;
+  overflow: hidden;
 
 
-  &:hover {
-    background-color: #0f69c4;
+  &__container {
+    color: #f1f1f1;
+    position: relative;
+    pointer-events: none;
+  }
+
+  &::before {
+    --button-spotlight-size: 0;
+
+    content: "";
+
+    position: absolute;
+    left: var(--button-spotlight-x);
+    top: var(--button-spotlight-y);
+    width: var(--button-spotlight-size);
+    height: var(--button-spotlight-size);
+
+    opacity: .1;
+    background: radial-gradient(circle closest-side, #111111, transparent);
+
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+
+  &:hover::before {
+    --button-spotlight-size: 400px;
   }
 }

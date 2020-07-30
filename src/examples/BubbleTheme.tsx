@@ -1,4 +1,8 @@
 import React, {Component, ReactNode} from 'react';
+
+import "./css/global.scss";
+import DefaultStyle from "../components/styles/DefaultStyle";
+
 import Button from "../components/Button/Button";
 import PureCheckbox from "../components/Checkbox/PureCheckbox.component";
 import Checkbox from "../components/Checkbox/Checkbox.component";
@@ -24,6 +28,8 @@ import Textarea from "../components/Textarea/Textarea.component";
 export default class BubbleTheme extends Component {
   public render(): ReactNode {
     return <section>
+      <DefaultStyle/>
+
       <h1><span>Webx React Forms</span> Bubble Theme</h1>
 
       {/* TODO: */}
