@@ -33,16 +33,6 @@ export default class BubbleTheme extends Component {
 
       <h1><span>Webx React</span> Bubble Theme</h1>
 
-      <Button style={{marginRight: "5px"}}>
-        <Icon code="far fa-address-card" />
-        <span className="button__container">Open Calendar</span>
-      </Button>
-
-      <Button>
-        <Icon invert src="https://img.icons8.com/ios-filled/100/000000/maxcdn.png"/>
-        <span className="button__container">Open Calendar</span>
-      </Button>
-
       {/* TODO: */}
       {/* Color Picker */}
       {/* Date + Time Picker */}
@@ -59,7 +49,21 @@ export default class BubbleTheme extends Component {
       {/* Area */}
 
       <h2>Button</h2>
-      <Button>Click me</Button>
+      <Button style={{marginRight: "5px"}}>Click me</Button>
+
+      <Button style={{marginRight: "5px"}}>
+        <Icon code="far fa-address-card" />
+        <span className="button__container">Address Card</span>
+      </Button>
+
+      <Button style={{marginRight: "5px"}}>
+        <span className="button__container">MaxCDN</span>
+        <Icon invert src="https://img.icons8.com/ios-filled/100/000000/maxcdn.png"/>
+      </Button>
+
+      <Button>
+        <Icon code="fas fa-times"/>
+      </Button>
 
       <div style={{display: "none"}}>
         <h2><span>Pure CSS</span> Checkbox</h2>

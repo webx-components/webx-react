@@ -70,6 +70,12 @@ $button-icon-gap: 12px;
     padding-left: $button-icon-gap;
   }
 
+  &:first-child:last-child {
+    padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
   $button-icon-sizes:
     "small" 16px,
     "medium" 20px,
