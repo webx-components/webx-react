@@ -4,7 +4,7 @@ import "./css/global.scss";
 import DefaultStyle from "../components/styles/DefaultStyle";
 
 import Button from "../components/Button/Button";
-import PureCheckbox from "../components/Checkbox/PureCheckbox.component";
+import PureCheckbox from "../components/PureCheckbox/PureCheckbox.component";
 import Checkbox from "../components/Checkbox/Checkbox.component";
 import Datepicker from "../components/Datepicker/Datepicker.component";
 import Field from "../components/Field/Field.component";
@@ -18,6 +18,7 @@ import Slider from "../components/Slider/Slider.component";
 import PureSlider from "../components/Slider/PureSlider.component";
 import SelectField from "../components/SelectField/SelectField.component";
 import Textarea from "../components/Textarea/Textarea.component";
+import Icon from "../components/Icon/Icon";
 
 
 
@@ -31,6 +32,16 @@ export default class BubbleTheme extends Component {
       <DefaultStyle/>
 
       <h1><span>Webx React</span> Bubble Theme</h1>
+
+      <Button style={{marginRight: "5px"}}>
+        <Icon code="far fa-address-card" />
+        <span className="button__container">Open Calendar</span>
+      </Button>
+
+      <Button>
+        <Icon invert src="https://img.icons8.com/ios-filled/100/000000/maxcdn.png"/>
+        <span className="button__container">Open Calendar</span>
+      </Button>
 
       {/* TODO: */}
       {/* Color Picker */}

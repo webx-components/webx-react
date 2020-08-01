@@ -16,9 +16,10 @@ export interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
  * @author Ingo Andelhofs
  */
 const ButtonUi: FC<IProps> = (p: IProps) => {
-  const {onMouseMove, classes, children, ...props} = p;
+  const {onMouseMove, classes, className, children, ...props} = p;
 
   const classNames = clsx(
+    className,
     classes,
     "button",
   );

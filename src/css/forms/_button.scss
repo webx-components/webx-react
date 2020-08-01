@@ -15,7 +15,7 @@
 
 
   &__container {
-    color: #f1f1f1;
+    color: #ffffff;
     position: relative;
     pointer-events: none;
   }
@@ -31,7 +31,7 @@
     width: var(--button-spotlight-size);
     height: var(--button-spotlight-size);
 
-    opacity: .1;
+    opacity: .2;
     background: radial-gradient(circle closest-side, #111111, transparent);
 
     transform: translate(-50%, -50%);
@@ -40,5 +40,50 @@
 
   &:hover::before {
     --button-spotlight-size: 400px;
+  }
+}
+
+
+
+$button-icon-shrink: 4px;
+$button-icon-gap: 12px;
+
+.button .icon {
+  display: inline-block;
+  position: relative;
+
+  vertical-align: middle;
+  line-height: 16px;
+
+  top: -2px;
+
+
+  &--invert {
+    filter: invert(1);
+  }
+
+  &:first-child {
+    padding-right: $button-icon-gap;
+  }
+
+  &:last-child {
+    padding-left: $button-icon-gap;
+  }
+
+  $button-icon-sizes:
+    "small" 16px,
+    "medium" 20px,
+    "large" 24px;
+
+  @each $size, $icon-size in $button-icon-sizes {
+    &--#{$size} {
+      max-height: $icon-size;
+      font-size: $icon-size;
+      line-height: $icon-size;
+
+      $icon-diff: 16px - $icon-size;
+      margin-bottom: $icon-diff;
+      margin-top: $icon-diff;
+    }
   }
 }
