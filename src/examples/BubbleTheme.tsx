@@ -4,8 +4,7 @@ import "./css/global.scss";
 import DefaultStyle from "../components/styles/DefaultStyle";
 
 import Button from "../components/Button/Button";
-import PureCheckbox from "../components/PureCheckbox/PureCheckbox.component";
-import Checkbox from "../components/Checkbox/Checkbox.component";
+import Checkbox from "../components/Checkbox/Checkbox";
 import Datepicker from "../components/Datepicker/Datepicker.component";
 import Field from "../components/Field/Field.component";
 import FileUpload from "../components/FileUpload/FileUpload.component";
@@ -65,18 +64,18 @@ export default class BubbleTheme extends Component {
         <Icon code="fas fa-times"/>
       </Button>
 
-      <div style={{display: "none"}}>
-        <h2><span>Pure CSS</span> Checkbox</h2>
-        <PureCheckbox />
-      </div>
+
+      {/*<h2><span>Pure CSS</span> Checkbox</h2>*/}
+      {/*<PureCheckbox />*/}
+
 
       <h2><span>React</span> Checkbox</h2>
       <Checkbox />
 
-      <div style={{display: "none"}}>
-        <h2>Color Picker</h2>
-        <Field type="color" />
-      </div>
+
+      {/*<h2>Color Picker</h2>*/}
+      {/*<Field type="color" />*/}
+
 
       <h2><span>React</span> Color Picker</h2>
       <ColorPicker />
